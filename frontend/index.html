@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Councils</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="media.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="backButtonContainer"></div>
+    <nav>
+        <ul role="menu" class="menu">
+            <li role="menuitem" class="menu-item" id="councilButton">Councils</li>
+            <li role="menuitem" class="menu-item" id="branchMapButton">Branches map</li>
+            <li role="menuitem" class="menu-item" id="openLoginFormButton">Sign in</li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="loginForm">
+        <form>
+            <label for="username">
+                Username
+            </label>
+            <input id="username" type="text" name="username">
+            <label for="password">
+                Password
+            </label>
+            <input id="password" type="password" name="password">
+            <div class="button-container">
+                <button class="submit-button" type="button" id="closeButton">Close</button>
+                <button class="submit-button" type="button" id="loginButton">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <div id="adminPanel">
+        <button id="createButton">Create</button>
+        <button id="editButton">Edit</button>
+        <button id="deleteButton">Delete</button>
+    </div>
+    <div class="main-content"></div>
+    <section id="notificationContainer"></section>
+</main>
+<script src="config.js"></script>
+<script src="requests.js"></script>
+<script src="auth.js"></script>
+<script src="artist.js"></script>
+<script src="instances.js"></script>
+<script src="events.js"></script>
+<script src="notifications.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
